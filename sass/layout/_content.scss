@@ -271,8 +271,12 @@
 }
 .swiper-service-block{
   position: relative;
-
-
+}
+.img-dark{
+  display: inline-block;
+}
+.img-light{
+  display: none;
 }
 .navleft-service,.navleft-servicex{
   cursor: pointer;
@@ -282,7 +286,14 @@
   transform: translateY(-50%);
   z-index: 2;
   outline: none;
-
+  &:hover{
+    .img-dark{
+      display: none;
+    }
+    .img-light{
+      display: inline-block;
+    }
+  }
 }
 .navright-service,.navright-servicex{
   outline: none;
@@ -292,6 +303,14 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
+  &:hover{
+    .img-dark{
+      display: none;
+    }
+    .img-light{
+      display: inline-block;
+    }
+  }
 
 }
 .swiper-service{
@@ -328,7 +347,7 @@
     border: none;
     color: #8C8C8C;
     background: #fff url("../img/bg-notactive.png") no-repeat bottom 13px center;
-    padding: 0 0 26px;
+    padding: 0 0 24px;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -336,7 +355,7 @@
       color: $c-bl;
     }
     span{
-      padding: 0 25px;
+      padding: 0 7px;
     }
   }
   .nav-link.active{
@@ -344,7 +363,7 @@
     border-color: unset;
     background: #fff url("../img/bg-active.png") no-repeat bottom center;
 
-    padding: 0 0 26px;
+    padding: 0 0 19px;
   }
 }
 
@@ -373,6 +392,7 @@
   background-size: cover;
   position: relative;
   padding: 20px 0 0;
+  background-attachment: fixed;
 
 }
 .bg-black{
@@ -461,6 +481,8 @@
     border-radius: 5px;
     padding: 9px;
     text-align: center;
+    transition: all 0.2s;
+
     .stuff{
       font-size: 18px;
       line-height: 21px;
@@ -471,6 +493,18 @@
       font-size: 40.5px;
       line-height: 48px;
       color: #AFAFAF;
+    }
+    &:hover{
+      background: #004282;
+      transition: all 0.2s;
+      border: 2px solid #004282;
+
+      .stuff{
+        color: #fff;
+      }
+      .day-of-month{
+        color: #fff;
+      }
     }
   }
 }

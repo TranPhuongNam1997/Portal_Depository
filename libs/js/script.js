@@ -119,14 +119,14 @@ $( document ).ready(function() {
         if ($(window).scrollTop() >=300) {
             $('#back-to-top').show();
         }
-        // if ($(window).scrollTop() >=1) {
-        //     $('.head-top').addClass('active');
-        // }
+        if ($(window).scrollTop() >=200) {
+            $('.head-top').addClass('active');
+        }
 
 
         else {
             $('#back-to-top').hide();
-            // $('.head-top').removeClass('active');
+            $('.head-top').removeClass('active');
         }
 
     });

@@ -41,7 +41,7 @@
 
     }
     .container-headtop{
-      position: relative;
+      //position: relative;
 
     }
     .logo{
@@ -53,26 +53,40 @@
         img{
 
           display: block;
+          &.logo-main{
+            display: block;
+          }
+          &.logo-light{
+            display: none;
+          }
         }
       }
     }
     .navigation{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      ul{
-        li{
-          float: left;
-          a{
-            display: block;
-            padding: 15px 20px;
-            font-weight: 500;
-            color: #fff;
+      //position: absolute;
+      //top: 50%;
+      //left: 50%;
+      //transform: translate(-50%,-50%);
+      nav{
+        >ul{
+          >li{
+            float: left;
+            >a{
+              display: block;
+              padding: 19px 20px;
+              font-weight: 500;
+              color: #fff;
 
+            }
+            &:hover{
+              .block-menuchild{
+                display: block;
+              }
+            }
           }
         }
       }
+
     }
     .block-search{
       float: right;
@@ -126,6 +140,94 @@
       }
     }
   }
+  .head-top{
+    &:hover{
+      background: #fff;
+      .logo{
+        a{
+          img{
+            &.logo-main{
+              display: none;
+            }
+            &.logo-light{
+              display: block;
+            }
+          }
+        }
+      }
+      .navigation{
+        nav{
+          >ul{
+            >li{
+              >a{
+                color: #999999;
+              }
+              &:hover{
+                >a{
+                  color: #202020;
+                }
+              }
+
+            }
+          }
+        }
+
+      }
+      .btn-search{
+        .img-dark{
+          display: none;
+        }
+        .img-light{
+          display: block;
+        }
+      }
+      .line-space{
+        background: #202020;
+      }
+      .select-language{
+        color: #303030;
+      }
+      .box-search input{
+        background: #f6f6f6;
+        color: #202020;
+      }
+    }
+    &.active{
+      position: fixed;
+      background: #fff;
+      .logo{
+        a{
+          img{
+            &.logo-main{
+              display: none;
+            }
+            &.logo-light{
+              display: block;
+            }
+          }
+        }
+      }
+      .navigation{
+        nav{
+          >ul{
+            >li{
+              >a{
+                color: #999999;
+              }
+              &:hover{
+                >a{
+                  color: #202020;
+                }
+              }
+
+            }
+          }
+        }
+
+      }
+    }
+  }
+
 }
 .head-bot{
   position: absolute;
