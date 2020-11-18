@@ -26,3 +26,79 @@
     background: rgb(8, 51, 107);
   }
 }
+
+.footer{
+  background: url("../img/bg-footer.png") no-repeat center center;
+  background-size: cover;
+  padding: 70px 0 15px;
+  position: relative;
+  .bg-foot{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background: #255888;
+  }
+}
+.item-foot{
+  margin-bottom: 60px;
+}
+.title-foot{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  margin-bottom: 20px;
+
+}
+.list-foot{
+  li{
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F4F4F4;
+    &:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+    a{
+      display: inline-block;
+      font-size: 14px;
+      line-height: 17px;
+      color: #F4F4F4;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+  }
+}
+.txt-foot{
+  margin-left: 35px;
+  &.txt-foot-detail{
+    margin-top: 49px;
+    display: block;
+  }
+}
+.copy-right{
+  font-size: 14px;
+  line-height: 17px;
+  color: #F2F2F2;
+  position: relative;
+}
+.contact-foot{
+  img{
+    width: 20px;
+    margin-right: 19px;
+    float: left;
+  }
+  span{
+    float: left;
+    width: calc(100% - 39px);
+  }
+}
+
