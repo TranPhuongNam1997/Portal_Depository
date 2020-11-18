@@ -30,7 +30,7 @@
 .footer{
   background: url("../img/bg-footer.png") no-repeat center center;
   background-size: cover;
-  padding: 70px 0 15px;
+  padding: 40px 0 0px;
   position: relative;
   .bg-foot{
     position: absolute;
@@ -43,7 +43,14 @@
   }
 }
 .item-foot{
-  margin-bottom: 60px;
+  //margin-bottom: 60px;
+  padding: 30px 0;
+
+}
+.hasborder{
+  height: 1px;
+  width: 100%;
+  background: #5B5B5B;
 }
 .title-foot{
   font-weight: 500;
@@ -89,6 +96,7 @@
   line-height: 17px;
   color: #F2F2F2;
   position: relative;
+  padding: 11px 0 15px;
 }
 .contact-foot{
   img{
@@ -102,3 +110,7 @@
   }
 }
 
+.logo-foot{
+  margin-bottom: 18px;
+  position: relative;
+}

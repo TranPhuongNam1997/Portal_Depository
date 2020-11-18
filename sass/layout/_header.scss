@@ -225,6 +225,24 @@
         }
 
       }
+      .btn-search{
+        .img-dark{
+          display: none;
+        }
+        .img-light{
+          display: block;
+        }
+      }
+      .line-space{
+        background: #202020;
+      }
+      .select-language{
+        color: #303030;
+      }
+      .box-search input{
+        background: #f6f6f6;
+        color: #202020;
+      }
     }
   }
 

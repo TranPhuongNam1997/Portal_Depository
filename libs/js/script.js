@@ -1,5 +1,10 @@
 $( document ).ready(function() {
 
+    $('.swiper-play').click(function () {
+        $(this).toggleClass('active');
+
+    });
+
 
     //js menubar
     // $(".menuchild").hide();

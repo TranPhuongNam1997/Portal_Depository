@@ -421,6 +421,17 @@ select[readonly="readonly"] {
       color: #999999; }
     .header .head-top.active .navigation nav > ul > li:hover > a {
       color: #202020; }
+    .header .head-top.active .btn-search .img-dark {
+      display: none; }
+    .header .head-top.active .btn-search .img-light {
+      display: block; }
+    .header .head-top.active .line-space {
+      background: #202020; }
+    .header .head-top.active .select-language {
+      color: #303030; }
+    .header .head-top.active .box-search input {
+      background: #f6f6f6;
+      color: #202020; }
 
 .head-bot {
   position: absolute;
@@ -485,7 +496,7 @@ select[readonly="readonly"] {
       padding-top: 5px; }
 
 .menuchild {
-  padding: 20px 0 38px;
+  padding: 20px 0 16px;
   background: #fff; }
   .menuchild .item-menuchild h3 {
     margin-bottom: 30px;
@@ -693,6 +704,9 @@ select[readonly="readonly"] {
     line-height: 29px;
     color: #255888;
     text-align: center; }
+  .box-service:hover .box-imgservice > img {
+    transform: scale(1.1);
+    transition: 0.3s; }
 
 .service {
   padding: 55px 0 40px; }
@@ -708,7 +722,9 @@ select[readonly="readonly"] {
   text-align: center; }
 
 .box-imgservice {
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0; }
   .box-imgservice:before {
     content: '';
     display: block;
@@ -719,12 +735,15 @@ select[readonly="readonly"] {
     left: 0;
     height: 100%;
     object-fit: cover;
-    width: 100%; }
-  .box-imgservice .img-icon {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    bottom: 0; }
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.3s; }
+
+.img-icon {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  bottom: 0; }
 
 .swiper-service-block {
   position: relative; }
@@ -735,7 +754,7 @@ select[readonly="readonly"] {
 .img-light {
   display: none; }
 
-.navleft-service, .navleft-servicex {
+.navleft-service, .navleft-servicex, .navleft-servicexx {
   cursor: pointer;
   position: absolute;
   left: -64px;
@@ -743,12 +762,12 @@ select[readonly="readonly"] {
   transform: translateY(-50%);
   z-index: 2;
   outline: none; }
-  .navleft-service:hover .img-dark, .navleft-servicex:hover .img-dark {
+  .navleft-service:hover .img-dark, .navleft-servicex:hover .img-dark, .navleft-servicexx:hover .img-dark {
     display: none; }
-  .navleft-service:hover .img-light, .navleft-servicex:hover .img-light {
+  .navleft-service:hover .img-light, .navleft-servicex:hover .img-light, .navleft-servicexx:hover .img-light {
     display: inline-block; }
 
-.navright-service, .navright-servicex {
+.navright-service, .navright-servicex, .navright-servicexx {
   outline: none;
   cursor: pointer;
   position: absolute;
@@ -756,9 +775,9 @@ select[readonly="readonly"] {
   top: 50%;
   transform: translateY(-50%);
   z-index: 2; }
-  .navright-service:hover .img-dark, .navright-servicex:hover .img-dark {
+  .navright-service:hover .img-dark, .navright-servicex:hover .img-dark, .navright-servicexx:hover .img-dark {
     display: none; }
-  .navright-service:hover .img-light, .navright-servicex:hover .img-light {
+  .navright-service:hover .img-light, .navright-servicex:hover .img-light, .navright-servicexx:hover .img-light {
     display: inline-block; }
 
 .swiper-service {
@@ -891,32 +910,66 @@ select[readonly="readonly"] {
 
 .txt-time {
   margin-top: 22px;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  font-weight: 500; }
 
-.swiper-service-tab a {
+.swiper-service-tab a, .swiper-service-tab2 a {
   display: block;
   border: 2px solid #c2c2c2;
   border-radius: 5px;
   padding: 9px;
   text-align: center;
   transition: all 0.2s; }
-  .swiper-service-tab a .stuff {
+  .swiper-service-tab a .stuff, .swiper-service-tab2 a .stuff {
     font-size: 18px;
     line-height: 21px;
     color: #8C8C8C;
     margin-bottom: 3px; }
-  .swiper-service-tab a .day-of-month {
+  .swiper-service-tab a .day-of-month, .swiper-service-tab2 a .day-of-month {
     font-size: 40.5px;
     line-height: 48px;
     color: #AFAFAF; }
-  .swiper-service-tab a:hover {
+  .swiper-service-tab a:hover, .swiper-service-tab2 a:hover {
     background: #004282;
     transition: all 0.2s;
     border: 2px solid #004282; }
-    .swiper-service-tab a:hover .stuff {
+    .swiper-service-tab a:hover .stuff, .swiper-service-tab2 a:hover .stuff {
       color: #fff; }
-    .swiper-service-tab a:hover .day-of-month {
+    .swiper-service-tab a:hover .day-of-month, .swiper-service-tab2 a:hover .day-of-month {
       color: #fff; }
+
+.swiper-play {
+  position: absolute;
+  bottom: 212px;
+  left: 53%;
+  z-index: 10;
+  transform: translateX(-50%);
+  cursor: pointer; }
+  .swiper-play .icon-pause {
+    display: block; }
+  .swiper-play .icon-play {
+    display: none; }
+  .swiper-play.active .icon-pause {
+    display: none; }
+  .swiper-play.active .icon-play {
+    display: block; }
+
+.sub-banner {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center; }
+  .sub-banner h2 {
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 66px;
+    margin-bottom: 17px; }
+  .sub-banner div {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px; }
 
 #back-to-top {
   position: fixed;
@@ -944,7 +997,7 @@ select[readonly="readonly"] {
 .footer {
   background: url("../img/bg-footer.png") no-repeat center center;
   background-size: cover;
-  padding: 70px 0 15px;
+  padding: 40px 0 0px;
   position: relative; }
   .footer .bg-foot {
     position: absolute;
@@ -956,7 +1009,12 @@ select[readonly="readonly"] {
     background: #255888; }
 
 .item-foot {
-  margin-bottom: 60px; }
+  padding: 30px 0; }
+
+.hasborder {
+  height: 1px;
+  width: 100%;
+  background: #5B5B5B; }
 
 .title-foot {
   font-weight: 500;
@@ -992,7 +1050,8 @@ select[readonly="readonly"] {
   font-size: 14px;
   line-height: 17px;
   color: #F2F2F2;
-  position: relative; }
+  position: relative;
+  padding: 11px 0 15px; }
 
 .contact-foot img {
   width: 20px;
@@ -1001,6 +1060,10 @@ select[readonly="readonly"] {
 .contact-foot span {
   float: left;
   width: calc(100% - 39px); }
+
+.logo-foot {
+  margin-bottom: 18px;
+  position: relative; }
 
 input.checkbox-md[type="checkbox"][disabled="disabled"] {
   background: transparent; }

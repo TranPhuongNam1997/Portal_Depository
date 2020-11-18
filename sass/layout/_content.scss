@@ -232,6 +232,14 @@
     color: $c-bl;
     text-align: center;
   }
+  &:hover{
+    .box-imgservice{
+      >img{
+        transform: scale(1.1);
+        transition: 0.3s;
+      }
+    }
+  }
 
 }
 .service{
@@ -250,6 +258,8 @@
 }
 .box-imgservice{
   position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0 ;
   &:before{
     @include resize-before(66.6667%);
   }
@@ -257,16 +267,19 @@
     @include resize-img;
     object-fit: cover;
     width: 100%;
+    transform: scale(1);
+    transition: all 0.3s;
   }
 
-  .img-icon{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,50%);
-    bottom: 0;
-    img{
 
-    }
+}
+.img-icon{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,50%);
+  bottom: 0;
+  img{
+
   }
 }
 .swiper-service-block{
@@ -278,7 +291,7 @@
 .img-light{
   display: none;
 }
-.navleft-service,.navleft-servicex{
+.navleft-service,.navleft-servicex,.navleft-servicexx{
   cursor: pointer;
   position: absolute;
   left: -64px;
@@ -295,7 +308,7 @@
     }
   }
 }
-.navright-service,.navright-servicex{
+.navright-service,.navright-servicex,.navright-servicexx{
   outline: none;
   cursor: pointer;
   position: absolute;
@@ -473,8 +486,9 @@
 .txt-time{
   margin-top: 22px;
   margin-bottom: 24px;
+  font-weight: 500;
 }
-.swiper-service-tab{
+.swiper-service-tab,.swiper-service-tab2{
   a{
     display: block;
     border: 2px solid #c2c2c2;
@@ -506,5 +520,47 @@
         color: #fff;
       }
     }
+  }
+}
+.swiper-play{
+  position: absolute;
+  bottom: 212px;
+  left: 53%;
+  z-index: 10;
+  transform: translateX(-50%);
+  cursor: pointer;
+  .icon-pause{
+    display: block;
+  }
+  .icon-play{
+    display: none;
+  }
+  &.active{
+    .icon-pause{
+      display: none;
+    }
+    .icon-play{
+      display: block;
+    }
+  }
+}
+
+.sub-banner{
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  text-align: center;
+  h2{
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 66px;
+    margin-bottom: 17px;
+  }
+  div{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
   }
 }
