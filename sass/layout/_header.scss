@@ -5,6 +5,9 @@
 .header{
   height: 100vh;
   position: relative;
+  &.header-category{
+    height: auto;
+  }
   .slidebanner{
     height: 100%;
     .swiper-container{
@@ -296,6 +299,72 @@
       background-image: url("../img/icon-angle-right.svg");
     }
 
+  }
+}
+
+.banner-category{
+  position: relative;
+  h2{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 23%;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  .bread-crumb{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 998px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    div{
+      background: #255888;
+      box-shadow: 0px 6px 15px 5px rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+    }
+    ul{
+      li{
+        float: left;
+        position: relative;
+        &:first-child{
+          border-right: 1px solid #fff;
+          a{
+            img{
+              margin-left: 0;
+            }
+          }
+        }
+        a{
+          display: flex;
+          padding: 15px 35px;
+          color: #fff;
+          &:hover{
+            text-decoration: underline;
+          }
+          img{
+            margin-left: 22px;
+          }
+        }
+        &:nth-child(n+2):after{
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 1px;
+          height: 70%;
+          background: #fff;
+        }
+      }
+    }
   }
 }
 
