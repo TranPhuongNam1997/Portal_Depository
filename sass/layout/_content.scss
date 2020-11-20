@@ -493,13 +493,13 @@
     display: block;
     border: 2px solid #c2c2c2;
     border-radius: 5px;
-    padding: 9px;
+    padding: 9px 0;
     text-align: center;
     transition: all 0.2s;
 
     .stuff{
-      font-size: 18px;
-      line-height: 21px;
+      font-size: 17px;
+      line-height: 20px;
       color: #8C8C8C;
       margin-bottom: 3px;
     }
@@ -725,6 +725,7 @@
 //style news
 
 .list-news{
+  margin-bottom: 34px;
   li{
     padding: 20px 20px;
     border-bottom: 1px solid #ddd;
@@ -772,6 +773,9 @@
   li{
     padding: 20px 0;
     border-bottom: 1px solid #e0e0e0;
+    &.has-sticknews{
+      background: url("../img/icon-ghimnew.svg") no-repeat top -5px right;
+    }
     &:last-child{
       border-bottom: none;
       padding-bottom: 0;
@@ -870,3 +874,55 @@
   background: none;
 }
 /* --o-- */
+
+.time-newstcph{
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #606060;
+  margin-bottom: 20px;
+}
+.item-info{
+  font-weight: 300;
+  margin-bottom: 11px;
+  &.item-info-main{
+    font-weight: 400;
+  }
+}
+.link-cate{
+  padding-bottom: 25px;
+  border-bottom: 1px solid #999;
+  margin-bottom: 20px;
+  ul{
+    text-align: right;
+    li{
+      display: inline-block;
+      margin-right: 15px;
+      a{
+        img{
+          transition: all 0.3s;
+        }
+        &:hover{
+          img{
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+.list-question{
+  margin-bottom: 20px;
+  li{
+    margin-bottom: 10px;
+    a{
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #999;
+      &:hover{
+        color: $c-bl;
+      }
+    }
+  }
+}
