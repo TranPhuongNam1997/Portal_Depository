@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VSD PORTAL</title>
+
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/all.css">
+    <link rel="stylesheet" href="libs/css/daterangepicker.css">
+    <link rel="stylesheet" href="libs/css/swiper.css">
+    <!--    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">-->
+    <!--<link rel="stylesheet" href="libs/css/jquery.fullpage.css">-->
+
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+<body>
+<div id="wrapper" class="clearfix">
+    <header class="header header-category">
+        <div class="banner-category">
+            <img src="img/banner-category.png" alt="img" class="w-100">
+            <h2>Tổ Chức Phát Hành</h2>
+            <div class="bread-crumb">
+                <div>
+                    <ul class="clearfix">
+                        <li><a href="#"><img src="img/icon-home.svg" alt="img"></a></li>
+                        <li><a href="#">Tổ Chức Phát Hành</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="head-top">
+            <div class="container-headtop flex-between">
+                <h1 class="logo">
+                    <a href="#">
+                        <img class="logo-main" src="img/logo.svg" alt="img">
+                        <img class="logo-light" src="img/logo-light.svg" alt="img">
+                    </a>
+                </h1>
+                <div class="navigation">
+                    <nav>
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#">Giới thiệu</a>
+                                <div class="block-menuchild">
+                                    <div class="title-child">
+                                        <div class="container-menu">
+                                            <h2><span>Giới thiệu</span></h2>
+                                        </div>
+                                    </div>
+                                    <div class="menuchild">
+                                        <div class="container-menu">
+                                            <div class="row">
+                                                <div class="col-lg-4 item-menuchild">
+                                                    <h3 class="title-column">VSD</h3>
+                                                    <ul>
+                                                        <li><a href="#">Thư ngỏ</a></li>
+                                                        <li><a href="#">Lịch sử hoạt động</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-4 item-menuchild">
+                                                    <h3 class="title-column">Tầm nhìn - Sứ mệnh</h3>
+                                                    <ul>
+                                                        <li><a href="#">Thư ngỏ</a></li>
+                                                        <li><a href="#">Lịch sử hoạt động</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-4 item-menuchild">
+                                                    <h3 class="title-column">Liên Hệ</h3>
+                                                    <ul>
+                                                        <li><a href="#">Liên hệ với chúng tôi</a></li>
+                                                        <li><a href="#">Vị trí</a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Dịch vụ</a>
+                            </li>
+                            <li>
+                                <a href="#">Tin tức</a>
+                            </li>
+                            <li>
+                                <a href="#">Pháp Lý</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="block-search">
+                    <div class="box-search">
+                        <input type="text">
+                        <button class="btn-search">
+                            <img class="img-dark" src="img/icon-search.svg" alt="img">
+                            <img class="img-light" src="img/icon-search-light.svg" alt="img">
+                        </button>
+                    </div>
+                    <div class="line-space"></div>
+                    <select name="" id="" class="select-language">
+                        <option value="">EN</option>
+                        <option value="">VI</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="block-category">
+            <div class="container-small">
+                <h3 class="title-category">Tổ Chức Phát Hành</h3>
+                <ul class="nav-tabs-issuers nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#dkdk">Đối Tượng & Điều Kiện Đăng Ký</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#qttt">Quy Trình & Thủ Tục</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#dstcph">Danh Sách Tổ Chức Phát Hành</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content tab-content-issuers">
+                    <div id="dkdk" class="tab-pane active">
+                        <div class="news-issuers">
+                            <h3 class="title-news-issuers">Đối tượng đăng ký tại VSD:</h3>
+                            <ul class="list-question-issuers">
+                                <li>Các loại chứng khoán sau phải thực hiện đăng ký tại VSD:</li>
+                                <li><a href="#">- Chứng khoán của các công ty đại chúng, tổ chức niêm yết</a></li>
+                                <li><a href="#">- Trái phiếu chính phủ niêm yết trên Sở Giao dịch Chứng khoán</a></li>
+                                <li><a href="#">- Trái phiếu của các tổ chức kinh tế, của chính quyền địa phương niêm
+                                    yết trên Sở Giao dịch Chứng khoán</a></li>
+                                <li><a href="#">- Chứng chỉ quỹ đầu tư niêm yết trên Sở Giao dịch Chứng khoán</a></li>
+                                <li><a href="#">- Các loại chứng khoán khác phải đăng ký tại VSD trên cơ sở thoả thuận
+                                    giữa VSD và tổ chức phát hành.</a></li>
+                            </ul>
+                        </div>
+                        <div class="news-issuers">
+                            <h3 class="title-news-issuers">Thông tin đăng ký chứng khoán tại VSD:</h3>
+                            <ul class="list-question-issuers">
+                                <li>Tổ chức phát hành thực hiện đăng ký các thông tin sau về chứng khoán tại VSD:</li>
+                                <li><a href="#">- Thông tin về tổ chức phát hành chứng khoán.</a></li>
+                                <li><a href="#">- Thông tin về chứng khoán phát hành.</a></li>
+                                <li><a href="#">- Thông tin về danh sách người sở hữu chứng khoán.</a></li>
+                            </ul>
+                        </div>
+                        <div class="news-issuers">
+                            <h3 class="title-news-issuers">Nguyên tắc quản lý thông tin chứng khoán tại VSD:</h3>
+                            <ul class="list-question-issuers">
+                                <li><a href="#">- Chứng khoán đăng ký tại VSD theo hình thức chứng khoán ghi sổ. Đối với
+                                    chứng chỉ chứng khoán đã phát hành, tổ chức phát hành phải chuyển đổi sang chứng
+                                    khoán ghi sổ khi đăng ký chứng khoán với VSD.</a></li>
+                                <li><a href="#">- Chứng khoán đăng ký tại VSD phải có mệnh giá theo quy định giao dịch
+                                    của các Sở Giao dịch Chứng khoán đối với từng loại chứng khoán. Trường hợp khác mệnh
+                                    giá, khi đăng ký chứng khoán với VSD, tổ chức phát hành phải chuyển đổi sang mệnh
+                                    giá phù hợp với mệnh giá giao dịch tại các Sở Giao dịch Chứng khoán.</a></li>
+                                <li><a href="#">- VSD quản lý tập trung các thông tin về chứng khoán đăng ký hoặc có thể
+                                    uỷ quyền bằng hợp đồng cho thành viên lưu ký thay mặt VSD quản lý.</a></li>
+                                <li><a href="#">- Mọi thay đổi liên quan đến thông tin chứng khoán đã đăng ký tại VSD
+                                    phải được thực hiện theo các quy định về quản lý thông tin của VSD.</a></li>
+                                <li><a href="#">- Tổ chức phát hành phải hoàn toàn chịu trách nhiệm về tính chính xác,
+                                    đầy đủ và kịp thời của các thông tin chứng khoán đăng ký với VSD.</a></li>
+                            </ul>
+                        </div>
+                        <div class="news-issuers">
+                            <h3 class="title-news-issuers">Nguyên tắc quản lý thông tin chứng khoán tại VSD:</h3>
+                            <ul class="list-question-issuers">
+                                <li>- Việc huỷ bỏ đăng ký đối với chứng khoán tại VSD được áp dụng trong các trường hợp
+                                    sau:
+                                </li>
+                                <li><a href="#">- Chứng khoán đăng ký hết hiệu lực lưu hành.</a></li>
+                                <li><a href="#">- Chứng khoán của các công ty đại chúng đã đăng ký tại VSD nhưng không
+                                    còn đáp ứng điều kiện là công ty đại chúng và có yêu cầu huỷ đăng ký.</a></li>
+                                <li><a href="#">- Tổ chức phát hành không phải là công ty đại chúng tự nguyện huỷ đăng
+                                    ký chứng khoán.</a></li>
+                                <li><a href="#">- (Quy chế hoạt động đăng ký chứng khoán tham khảo tại Mục Văn bản pháp
+                                    lý).</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div id="qttt" class="tab-pane fade">
+                        <div class="news-issuers">
+                            <h3 class="title-news-issuers">Các Thủ tục về hoạt động đối với Dịch vụ Quỹ:</h3>
+                            <ul class="list-question-issuers">
+                                <li><a href="#">- Thủ tục hoạt động điều chỉnh Giấy chứng nhận đăng ký chứng chỉ quỹ ETF
+                                    trong trường hợp CTQLQ trả lợi tức bằng chứng chỉ quỹ</a></li>
+                                <li><a href="#">- Thủ tục Đăng ký chứng chỉ quỹ ETF lần đầu, chuyển quyền sở hữu chứng
+                                    khoán cơ cấu góp vốn đối với chứng chỉ quỹ ETF</a></li>
+                                <li><a href="#">- Thủ tục Quy trình triển khai ký hợp đồng cung cấp dịch vụ Đại lý
+                                    chuyển nhượng cho quỹ mở giữa VSD và Công ty quản lý quỹ</a></li>
+                                <li><a href="#">- Thủ tục Điều chỉnh do thay đổi tên Tổ chức đăng ký</a></li>
+                                <li><a href="#">- Thủ tục hoạt động hủy đăng ký chứng chỉ quỹ ETF</a></li>
+                                <li><a href="#">- Thủ tục điều chỉnh Giấy chứng nhận đăng ký chứng chỉ quỹ ETF thực hiện
+                                    trong trường hợp có sự thay đổi (tăng/giảm) về số lượng chứng chỉ quỹ ETF lưu hành
+                                    theo kết quả thực hiện giao dịch hoán đổi</a></li>
+                            </ul>
+                        </div>
+                        <div class="news-issuers">
+                            <h3 class="title-news-issuers">Các Thủ tục về hoạt động đối với Dịch vụ Quỹ:</h3>
+                            <ul class="list-question-issuers">
+                                <li><a href="#">- Thủ tục cấp mã chứng khoán là cổ phiếu, chứng chỉ quỹ</a></li>
+                                <li><a href="#">- Thủ tục cấp mã chứng khoán tạm thời cho trái phiếu được chính phủ bảo
+                                    lãnh, trái phiếu chính quyền địa phương và tín phiếu</a></li>
+                                <li><a href="#">- Thủ tục cấp mã chứng khoán là trái phiếu được chính phủ bão lãnh, trái
+                                    phiếu chính quyền địa phương và tín phiếu</a></li>
+                                <li><a href="#">- Thủ tục bảo lưu mã chứng khoán là cổ phiếu, chứng chỉ quỹ</a></li>
+                            </ul>
+                        </div>
+                        <div class="news-issuers">
+                            <h3 class="title-news-issuers">Các Thủ tục về hoạt động Thực hiện quyền:</h3>
+                            <ul class="list-question-issuers">
+                                <li><a href="#">-Thủ tục về hoạt động Thực hiện quyền</a></li>
+                            </ul>
+                        </div>
+                        <div class="news-issuers">
+                            <h3 class="title-news-issuers">Các thủ tục về Hoạt động Điều chỉnh thông tin:</h3>
+                            <ul class="list-question-issuers">
+                                <li><a href="#">- Thủ tục Điều chỉnh thông tin về loại chứng khoán.</a></li>
+                                <li><a href="#">- Thủ tục Điều chỉnh thông tin về người sở hữu chứng khoán.</a></li>
+                                <li><a href="#">- Thủ tục Điều chỉnh thông tin sai sót về số lượng chứng khoán sở
+                                    hữu</a></li>
+                                <li><a href="#">- Thủ tục Điều chỉnh thông tin về quyền sở hữu do thực hiện chuyển giao
+                                    quyền đại diện chủ sở hữu vốn Nhà nước.</a></li>
+                            </ul>
+                        </div>
+                        <div class="news-issuers">
+                            <h3 class="title-news-issuers">Các thủ tục về Hoạt động Chuyền Quyền sở hữu chứng
+                                khoán:</h3>
+                            <ul class="list-question-issuers">
+                                <li><a href="#">- Thủ tục Chuyển quyền sở hữu do biếu, tặng, cho chứng khoán.</a></li>
+                                <li><a href="#">- Thủ tục Chuyển quyền sở hữu do thay đổi cổ đông chiến lược trong thời
+                                    gian hạn chế chuyển nhượng.</a></li>
+                                <li><a href="#">- Thủ tục: Chuyển quyền sở hữu đối với cổ phiếu của cổ đông sáng lập
+                                    trong thời gian hạn chế chuyển nhượng.
+                                </a></li>
+                                <li><a href="#">- Thủ tục Chuyển quyền sở hữu do TCPH dùng cổ phiếu quỹ để thưởng/phân
+                                    phối /bán lại cho CBNV với giá ưu đãi.</a></li>
+                                <li><a href="#">- Thủ tục Chuyển quyền sở hữu cổ phiếu của công ty đại chúng đã đăng ký
+                                    tại VSD nhưng chưa, không niêm yết, đăng ký giao dịch trên SGDCK</a></li>
+                                <li><a href="#">- Thủ tục Chuyển quyền sở hữu do góp vốn bằng cổ phiếu vào doanh
+                                    nghiệp.</a></li>
+                                <li><a href="#">- Thủ tục Chuyển quyền sở hữu do TCPH hoặc Công đoàn thu hồi/mua lại cổ
+                                    phiếu ưu đãi của CBCNV khi chấm dứt hợp đồng lao động làm cổ phiếu quỹ/cổ phiếu
+                                    thưởng cho CBCNV</a></li>
+                                <li><a href="#">- Thủ tục Chuyển quyền sở hữu do thừa kế CK</a></li>
+                                <li><a href="#">- Thủ tục Chuyển quyền sở hữu theo quyết định có hiệu lực của tòa
+                                    án.</a></li>
+                                <li><a href="#">- Thủ tục Chuyển quyền sở hữu giữa nhà đầu tư ủy thác và công ty quản lý
+                                    quỹ hoặc ngược lại và giữa công ty quản lý quỹ với nhau.</a></li>
+                                <li><a href="#">- Thủ tục Chuyển quyền sở hữu do chia tách, sáp nhập, hợp nhất doanh
+                                    nghiệp hoặc phân định lại cơ chế quản lý tài chính của doanh nghiệp.</a></li>
+                                <li><a href="#">- Thủ tục Chuyển quyền sở hữu đối với các giao dịch chứng khoán lô lẻ
+                                    theo quy định của pháp luật về chứng khoán và thị trường chứng khoán.</a></li>
+                                <li><a href="#">- Quy trình thực hiện với trường hợp chuyển quyền sở hữu do TCPH mua lại
+                                    cổ phiếu của cổ đông hiện hữu
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="news-issuers">
+                            <h3 class="title-news-issuers">Các thủ tục về Hoạt động Đăng ký chứng khoán:</h3>
+                            <ul class="list-question-issuers">
+                                <li><a href="#">- Thủ tục Cấp Giấy chứng nhận đăng ký chứng khoán lần đầu đối với cổ phiếu, trái phiếu công ty, chứng chỉ quỹ</a></li>
+                                <li><a href="#">- Thủ tục với hoạt động Điều chỉnh giảm số lượng chứng khoán đăng ký;</a></li>
+                                <li><a href="#">- Thủ tục với Hoạt động: Điều chỉnh Giấy chứng nhận đăng ký chứng khoán do Tổ chức phát hành đăng ký bổ sung chứng khoán;</a></li>
+                                <li><a href="#">- Thủ tục Cấp Giấy chứng nhận đăng ký chứng khoán lần đần đối với tín phiếu Kho bạc</a></li>
+                                <li><a href="#">- Thủ tục Cấp Giấy chứng nhận đăng ký chứng khoán lần đần đối với trái phiếu niêm yết và giao dịch trên thị trường trái phiếu chính phủ chuyên biệt</a></li>
+                                <li><a href="#">- Thủ tục điều chỉnh do thay đổi tên Tổ chức đăng ký</a></li>
+                                <li><a href="#">- Thủ tục Huỷ đăng ký chứng khoán do TCPH không đủ điều kiện là công ty đại chúng tự nguyện huỷ đăng ký</a></li>
+                                <li><a href="#">- Thủ tục Huỷ đăng ký chứng khoán hết hiệu lực lưu hành</a></li>
+                                <li><a href="#">- Hoạt động: Hủy đăng ký chứng khoán do hoán đổi cổ phiếu</a></li>
+                                <li><a href="#">- Thủ tục đăng ký đối với các TCPH chuyển sàn giao dịch</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="dstcph" class="tab-pane fade">
+                        <div class="box-search-article">
+                            <div class="row">
+                                <div class="col-lg-11 ">
+                                    <div class="row h-100">
+                                        <div class="col-12 item-row">
+                                            <div class="item-search">
+                                                <label class="lbl-search">Tên Thành Viên</label>
+                                                <select name="">
+                                                    <option value="">Điền tên thành viên của bạn</option>
+                                                    <option value="">Điền tên thành viên của bạn1</option>
+                                                    <option value="">Điền tên thành viên của bạn2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 item-row">
+                                            <div class="item-search">
+                                                <label class="lbl-search">Loại Thành Viên</label>
+                                                <select name="">
+                                                    <option value="">Tất cả</option>
+                                                    <option value="">Loại Thành Viên1</option>
+                                                    <option value="">Loại Thành Viên2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 item-row">
+                                            <div class="item-search">
+                                                <label class="lbl-search">Trạng Thái</label>
+                                                <select name="">
+                                                    <option value="">Tất cả</option>
+                                                    <option value="">Trạng Thái1</option>
+                                                    <option value="">Trạng Thái2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-1">
+                                    <button class="btn-sl-search"><img src="img/icon-sl-search.svg" alt="img"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-portal">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Số đăng ký TV</th>
+                                        <th>Tên thành viên</th>
+                                        <th>Tên viết tắt</th>
+                                        <th>Loại thành viên</th>
+                                        <th>Trạng thái</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td><a href="#">Công ty cổ phần Chứng khoán SSI </a></td>
+                                        <td>SSI</td>
+                                        <td>Thành viên lưu ký</td>
+                                        <td>Bình thường</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>002</td>
+                                        <td><a href="#">Công ty trách nhiệm hữu hạn Chứng khoán Yuanta Việt Nam</a></td>
+                                        <td>YSVN</td>
+                                        <td>Thành viên lưu ký</td>
+                                        <td>Thu Hồi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td><a href="#">Công ty cổ phần Chứng khoán SSI </a></td>
+                                        <td>SSI</td>
+                                        <td>Thành viên lưu ký</td>
+                                        <td>Bình thường</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>002</td>
+                                        <td><a href="#">Công ty trách nhiệm hữu hạn Chứng khoán Yuanta Việt Nam</a></td>
+                                        <td>YSVN</td>
+                                        <td>Thành viên lưu ký</td>
+                                        <td>Thu Hồi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>001</td>
+                                        <td><a href="#">Công ty cổ phần Chứng khoán SSI </a></td>
+                                        <td>SSI</td>
+                                        <td>Thành viên lưu ký</td>
+                                        <td>Bình thường</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>002</td>
+                                        <td><a href="#">Công ty trách nhiệm hữu hạn Chứng khoán Yuanta Việt Nam</a></td>
+                                        <td>YSVN</td>
+                                        <td>Thành viên lưu ký</td>
+                                        <td>Thu Hồi</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-right">Ốp hộ em paging vào đây giúp e</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- end main-->
+
+    <footer class="footer">
+        <div class="bg-foot"></div>
+        <div class="container-small">
+            <div class="logo-foot">
+                <a href="#"><img src="img/logo.svg" alt="img"></a>
+            </div>
+            <div class="row item-foot">
+                <div class="col-lg-3">
+                    <h4 class="title-foot">Giới Thiệu</h4>
+                    <ul class="list-foot">
+                        <li><a href="#">Thư ngỏ</a></li>
+                        <li><a href="#">Lịch sử hoạt động</a></li>
+                        <li><a href="#">Cơ cấu tổ chức</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="title-foot">Giới Thiệu</h4>
+                    <ul class="list-foot">
+                        <li><a href="#">Bù trừ và thanh toán</a></li>
+                        <li><a href="#">Bỏ phiếu điện tử</a></li>
+                        <li><a href="#">Cấp mã chứng khoán</a></li>
+                        <li><a href="#">Cấp mã số giao dịch</a></li>
+                        <li><a href="#">Dịch vụ quỹ</a></li>
+                        <li><a href="#">Đăng ký chứng khoán</a></li>
+                        <li><a href="#">Lưu ký chứng khoán</a></li>
+                        <li><a href="#">Thực hiện quyền</a></li>
+                        <li><a href="#">Vay và cho vay chứng khoán</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="title-foot">Pháp Lý</h4>
+                    <ul class="list-foot">
+                        <li><a href="#">Luật</a></li>
+                        <li><a href="#">Nghị định</a></li>
+                        <li><a href="#">Thông tư</a></li>
+                        <li><a href="#">Quyết định</a></li>
+                        <li><a href="#">Quy chế của VSD</a></li>
+                        <li><a href="#">Loại văn bản khác</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="title-foot">Công Bố TT</h4>
+                    <ul class="list-foot">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hasborder"></div>
+            <div class="row item-foot">
+                <div class="col-lg-6">
+                    <h4 class="title-foot">Liên hệ</h4>
+                    <ul class="list-foot">
+                        <li><span class="txt-foot">Trụ sở chính:</span></li>
+                        <li><span class="contact-foot"><img src="img/icon-map.svg" alt="img"><span>Số 112 đường Hoàng Quốc Việt, phường Cổ Nhuế 1,
+                            quận Bắc Từ Liêm, thành phố Hà Nội</span></span></li>
+                        <li><span class="contact-foot"><img src="img/icon-phone.svg"
+                                                            alt="img"><span>(+84.24)3 9747 123</span></span></li>
+                        <li><span class="contact-foot"><img src="img/icon-fax.svg"
+                                                            alt="img"><span>(+84.24) 3 9747 120</span></span></li>
+                        <li><span class="contact-foot"><img src="img/icon-mail.svg"
+                                                            alt="img"><span>webmaster@vsd.vn</span></span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-foot">
+                        <li><span class="txt-foot txt-foot-detail">Chi nhánh:</span></li>
+                        <li><span class="contact-foot"><img src="img/icon-map.svg" alt="img"><span>151 Nguyễn Đình Chiểu, phường 6, quận 3,
+                            TP. Hồ Chí Minh</span></span></li>
+                        <li><span class="contact-foot"><img src="img/icon-phone.svg"
+                                                            alt="img"><span>(+84.28)3 9330755</span></span></li>
+                        <li><span class="contact-foot"><img src="img/icon-fax.svg"
+                                                            alt="img"><span>(+84.28)3 9330754</span></span></li>
+                        <li><span class="contact-foot"><img src="img/icon-mail.svg"
+                                                            alt="img"><span>webmaster@vsd.vn</span></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy-right">Copy right 2020. All rights reserved</div>
+        </div>
+    </footer>
+</div>
+
+<a href="#" id="back-to-top"><i class="fas fa-angle-up"></i></a>
+
+<script type="text/javascript" src="libs/js/jquery.min.js"></script>
+<script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="libs/js/jquery.datetimepicker.full.min.js"></script>
+<script type="text/javascript" src="libs/js/moment.min.js"></script>
+
+<script type="text/javascript" src="libs/js/swiper.js"></script>
+<!--<script type="text/javascript" src="libs/js/jquery.fullpage.js"></script>-->
+<!--<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>-->
+<script type="text/javascript" src="libs/js/script.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    $(function () {
+
+        var swiper = new Swiper('.swiper-banner', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+
+            },
+            autoplay: {delay: 5000,},
+        });
+
+
+    });
+
+    $(function () {
+
+        var swiper = new Swiper('.swiper-utility', {
+            slidesPerView: 6,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+            loop: true,
+            grabCursor: true,
+            loopFillGroupWithBlank: true,
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    });
+
+    $(function () {
+
+        var swiper = new Swiper('.swiper-news', {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            slidesPerGroup: 1,
+            loop: true,
+            grabCursor: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.dot-panigation',
+                clickable: true,
+            },
+
+        });
+    });
+
+
+    $(function () {
+
+        var swiper1 = new Swiper('.swiper-service', {
+            slidesPerView: 3,
+            spaceBetween: 38,
+            slidesPerGroup: 1,
+            loop: true,
+            dot: false,
+            grabCursor: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.navright-service',
+                prevEl: '.navleft-service',
+            },
+        });
+    });
+
+    $(function () {
+
+        var swiper = new Swiper('.swiper-service-tab', {
+            slidesPerView: 8,
+            spaceBetween: 25,
+            slidesPerGroup: 1,
+            loop: false,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '',
+                clickable: true,
+            },
+            grabCursor: true,
+            navigation: {
+                nextEl: '.navright-servicex',
+                prevEl: '.navleft-servicex',
+            },
+        });
+    });
+
+    $(function () {
+
+        var swiper = new Swiper('.swiper-service-tab2', {
+            slidesPerView: 8,
+            spaceBetween: 25,
+            slidesPerGroup: 1,
+            loop: false,
+            grabCursor: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.navright-servicexx',
+                prevEl: '.navleft-servicexx',
+            },
+        });
+    });
+    $(function () {
+
+        // var swiper = new Swiper(".swiper-category", {
+        //     direction: 'vertical',
+        //     loopedSlides: 1,
+        //     slidesPerGroup: 1,
+        //     loop: true,
+        //     slidesPerView: "auto",
+        //     freeMode: true,
+        //     mousewheel: {
+        //         releaseOnEdges: true,
+        //     },
+        // });
+        // var swiper = new Swiper(".swiper-category", {
+        //     loopedSlides: 8,
+        //     loop: false,
+        //     slidesPerView: "auto",
+        //     freeMode: true,
+        //     mousewheel: {
+        //         releaseOnEdges: true,
+        //     },
+        // });
+        var menu = ['2019', '2018', '2017', '2016', '2015'];
+        var swiper = new Swiper('.swiper-category', {
+            // direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 25,
+            slidesPerGroup: 1,
+            loop: false,
+            grabCursor: true,
+            loopFillGroupWithBlank: true,
+            // pagination: {
+            //     el: '',
+            //     clickable: true,
+            // },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (menu[index]) + '</span>';
+                },
+            },
+        });
+    });
+
+
+</script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>-->
+<!--<script type="text/javascript">-->
+<!--    new fullpage('#fullpage', {-->
+<!--        anchors: ['h-2019', 'h-2018', 'h-2017', 'h-2016','h-2015'],-->
+<!--        menu: '#timeline',-->
+<!--        continuousHorizontal: true,-->
+<!--        continuousHorizontalKey: 'YWx2YXJvdHJpZ28uY29tX00zVVkyOXVkR2x1ZFc5MWMwaHZjbWw2YjI1MFlXdz12Nk0=',-->
+
+<!--        slidesNavigation: true,-->
+<!--        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){-->
+<!--            console.log("slideLoad&#45;&#45;" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);-->
+
+<!--        },-->
+<!--        onSlideLeave: function(anchorLink, index, slideIndex, direction){-->
+<!--            console.log("&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;");-->
+<!--            console.log("onSlideLeave&#45;&#45;" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);-->
+<!--        }-->
+<!--    });-->
+<!--    -->
+<!--</script>-->
+</body>
+</html>

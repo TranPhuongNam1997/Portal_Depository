@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="libs/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/css/all.css">
     <link rel="stylesheet" href="libs/css/daterangepicker.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.css">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.css">-->
     <link rel="stylesheet" href="libs/css/swiper.css">
     <link rel="stylesheet" href="sass/main.css">
 </head>
@@ -205,9 +205,26 @@
                         </div>
                         <div class="bond-information">
                             <div class="txt-bond"><img src="img/icon-listtvlk.svg" alt="img">Danh Sách TVLK</div>
-                            <div class="box-news">
-                                <div class="title-news">Thực hiện quyền</div>
-                                <div id="datetimepicker-sidebyside"></div>
+                            <div class="box-news box-news-pd">
+                                <ul class="nav nav-tabs tabs-article" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#thq">Thực Hiện Quyền</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tkgd">Hoạch Toán TKGD</a>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content tab-content-article">
+                                    <div id="thq" class="container tab-pane active"><br>
+                                        <div class="calendar calendar-article"></div>
+                                    </div>
+                                    <div id="tkgd" class="container tab-pane fade"><br>
+                                        <div class="calendar calendar-article"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -305,11 +322,22 @@
 <a href="#" id="back-to-top"><i class="fas fa-angle-up"></i></a>
 
 <script type="text/javascript" src="libs/js/jquery.min.js"></script>
-<script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.min.js"></script>
+<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.14.30/js/bootstrap-datetimepicker.min.js"></script>
+<script>
+    $(function() {
+        $( ".calendar-article" ).datepicker({ firstDay: 1});
+        // $( ".calendar-article" ).datepicker({ firstDay: 1,$.datepicker.regional[ "vi" ]});
+
+        // $( ".calendar-article" ).datepicker( $.datepicker.regional[ "vi" ] );
+
+    });
+</script>
+<script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.min.js"></script>-->
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.14.30/js/bootstrap-datetimepicker.min.js"></script>-->
 <script type="text/javascript" src="libs/js/jquery.datetimepicker.full.min.js"></script>
 <script type="text/javascript" src="libs/js/moment.min.js"></script>
 
@@ -455,54 +483,54 @@
         });
     });
 
-    $(function () {
-
-        $('#datetimepicker-sidebyside').datetimepicker({
-            format: 'YYYY-MMM-DD',
-            calendarWeeks: true,
-            inline: true,
-            collapse: true,
-            sideBySide: true,
-            showClose: true,
-        });
-    });
+    // $(function () {
+    //
+    //     $('#datetimepicker-sidebyside').datetimepicker({
+    //         format: 'YYYY-MMM-DD',
+    //         calendarWeeks: true,
+    //         inline: true,
+    //         collapse: true,
+    //         sideBySide: true,
+    //         showClose: true,
+    //     });
+    // });
     // angular js
-    (function(){
-        'use strict';
-
-        var datetime = angular.module('dateTimeSandbox', []);
-        datetime.directive('datetimepicker', function(){
-            return {
-                require: '?ngModel',
-                restrict: 'AE',
-                link: function(scope, elem, attrs){
-                    console.log('fired directive');
-                    elem.datetimepicker({
-                        allowInputToggle: true,
-                        calendarWeeks: true,
-                        showTodayButton: true,
-                        showClose: true, //close the picker
-                        // showClear: true, //clear selection
-                        format: 'YYYY-MMM-DD HH:mm',
-                        inline: false,
-                        sideBySide: true,
-                        widgetPositioning: {
-                            horizontal: 'auto',
-                            vertical: 'bottom'
-                        }
-                    });
-
-                    elem.on("dp.show", function (e) {
-                        $('[data-action="today"] span').removeClass('glyphicon-screenshot').addClass('glyphicon-calendar');
-                        $('[data-action="close"]').attr('title', 'Save');
-                        $('[data-action="close"] span').removeClass('glyphicon-remove').addClass('glyphicon-ok');
-                    });
-
-                }
-            };
-
-        });
-    })();
+    // (function(){
+    //     'use strict';
+    //
+    //     var datetime = angular.module('dateTimeSandbox', []);
+    //     datetime.directive('datetimepicker', function(){
+    //         return {
+    //             require: '?ngModel',
+    //             restrict: 'AE',
+    //             link: function(scope, elem, attrs){
+    //                 console.log('fired directive');
+    //                 elem.datetimepicker({
+    //                     allowInputToggle: true,
+    //                     calendarWeeks: true,
+    //                     showTodayButton: true,
+    //                     showClose: true, //close the picker
+    //                     // showClear: true, //clear selection
+    //                     format: 'YYYY-MMM-DD HH:mm',
+    //                     inline: false,
+    //                     sideBySide: true,
+    //                     widgetPositioning: {
+    //                         horizontal: 'auto',
+    //                         vertical: 'bottom'
+    //                     }
+    //                 });
+    //
+    //                 elem.on("dp.show", function (e) {
+    //                     $('[data-action="today"] span').removeClass('glyphicon-screenshot').addClass('glyphicon-calendar');
+    //                     $('[data-action="close"]').attr('title', 'Save');
+    //                     $('[data-action="close"] span').removeClass('glyphicon-remove').addClass('glyphicon-ok');
+    //                 });
+    //
+    //             }
+    //         };
+    //
+    //     });
+    // })();
 
 </script>
 

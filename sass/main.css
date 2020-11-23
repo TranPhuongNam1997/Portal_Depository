@@ -1109,7 +1109,7 @@ select[readonly="readonly"] {
     padding-right: 40px;
     border-right: 1px solid #E0E0E0; }
 
-.swiper-pagination-bullet {
+.swiper-category-block .swiper-pagination-bullet {
   display: block;
   width: auto;
   height: auto;
@@ -1122,10 +1122,9 @@ select[readonly="readonly"] {
   margin-bottom: 40px !important;
   opacity: 1;
   outline: none; }
-  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  .swiper-category-block .swiper-pagination-bullet.swiper-pagination-bullet-active {
     color: #255888; }
-
-.swiper-container-horizontal > .swiper-pagination-bullets {
+.swiper-category-block .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto; }
 
 .swiper-category-block {
@@ -1161,6 +1160,8 @@ select[readonly="readonly"] {
   background: #FFFFFF;
   border-radius: 5px;
   margin-bottom: 20px; }
+  .box-news.box-news-pd {
+    padding: 15px 8px; }
 
 .title-news {
   font-weight: 500;
@@ -1293,6 +1294,232 @@ select[readonly="readonly"] {
       color: #999; }
       .list-question li a:hover {
         color: #255888; }
+
+.nav-tabs-issuers {
+  border-bottom: none;
+  padding: 0 50px;
+  margin-bottom: 40px; }
+  .nav-tabs-issuers.nav {
+    justify-content: center; }
+  .nav-tabs-issuers .nav-link {
+    color: #8C8C8C;
+    border: 1px solid #AFAFAF;
+    border-right: none;
+    font-weight: 500;
+    border-radius: 0;
+    text-align: center;
+    padding: 20px 5px; }
+    .nav-tabs-issuers .nav-link.active {
+      color: #fff;
+      background: #255888;
+      border: 1px solid #255888; }
+    .nav-tabs-issuers .nav-link:hover {
+      background: #255888;
+      color: #fff;
+      border: 1px solid #255888; }
+  .nav-tabs-issuers .nav-item {
+    width: 33.3333%; }
+    .nav-tabs-issuers .nav-item:last-child .nav-link {
+      border-right: 1px solid #afafaf;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px; }
+    .nav-tabs-issuers .nav-item:first-child .nav-link {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px; }
+
+.news-issuers {
+  margin-bottom: 30px; }
+
+.title-news-issuers {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px; }
+
+.list-question-issuers li a:hover {
+  color: #255888; }
+
+.item-row:first-child {
+  margin-bottom: 7px; }
+.item-row .item-search {
+  display: flex;
+  align-items: center; }
+  .item-row .item-search .lbl-search {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    width: 120px;
+    margin-right: 30px;
+    margin-bottom: 0; }
+  .item-row .item-search select {
+    width: calc(100% - 150px);
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 13px 0;
+    font-weight: 300;
+    color: #999;
+    outline: none; }
+
+.btn-sl-search {
+  background: #255888;
+  padding: 14px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 100%;
+  border: none;
+  transition: all 0.2s; }
+  .btn-sl-search:hover {
+    background: #336ca2;
+    transition: all 0.2s; }
+
+.box-search-article {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #999;
+  margin-bottom: 20px; }
+
+.table-portal {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd; }
+  .table-portal table thead tr {
+    background: #f1f1f1; }
+    .table-portal table thead tr th {
+      padding: 30px 20px;
+      font-weight: 500;
+      color: #303030;
+      border: 1px solid #c7c7c7;
+      border-top: none; }
+      .table-portal table thead tr th:first-child {
+        border-left: none; }
+      .table-portal table thead tr th:last-child {
+        border-right: none; }
+  .table-portal table tbody tr {
+    background: #fff; }
+    .table-portal table tbody tr:nth-child(even) {
+      background: rgba(2, 124, 194, 0.05); }
+    .table-portal table tbody tr td {
+      font-weight: 300;
+      border: 1px solid #c7c7c7;
+      padding: 30px 20px; }
+      .table-portal table tbody tr td a:hover {
+        color: #255888; }
+      .table-portal table tbody tr td:first-child {
+        border-left: none; }
+      .table-portal table tbody tr td:last-child {
+        border-right: none; }
+    .table-portal table tbody tr:last-child td {
+      border-bottom: none; }
+
+.calendar {
+  width: 100%;
+  background: #fff;
+  border-radius: 4px; }
+
+.ui-datepicker-header {
+  height: 50px;
+  line-height: 50px;
+  color: #f26a63;
+  margin-bottom: 10px; }
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  width: 20px;
+  height: 20px;
+  text-indent: 9999px;
+  border-radius: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 12px; }
+
+.ui-datepicker-prev {
+  float: left;
+  margin-left: 12px; }
+
+.ui-datepicker-prev:after {
+  transform: rotate(45deg);
+  margin: -43px 0px 0px 8px; }
+
+.ui-datepicker-next {
+  float: right;
+  margin-right: 12px; }
+
+.ui-datepicker-next:after {
+  transform: rotate(-135deg);
+  margin: -43px 0px 0px 6px; }
+
+.ui-datepicker-prev:after,
+.ui-datepicker-next:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #255888;
+  border-bottom: 2px solid #255888; }
+
+.ui-datepicker-title {
+  text-align: center; }
+
+.ui-datepicker-calendar {
+  width: 100%;
+  text-align: center; }
+
+.ui-datepicker-calendar thead tr th span {
+  display: block;
+  width: 36px;
+  color: #FA9D17;
+  margin-bottom: 5px; }
+
+.ui-state-default {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  line-height: 20px;
+  font-size: 16px;
+  padding: 8px; }
+
+.ui-state-default:hover {
+  background: #255888;
+  color: #fff;
+  border-radius: 5px; }
+
+.ui-state-highlight {
+  color: #255888;
+  font-weight: bold; }
+
+.ui-state-active {
+  background: #255888;
+  color: #fff;
+  border-radius: 5px; }
+
+.ui-datepicker-unselectable .ui-state-default {
+  color: #eee;
+  border: 2px solid #808080; }
+
+.ui-datepicker-title {
+  color: #255888; }
+
+.ui-datepicker-title .ui-datepicker-month {
+  color: #255888;
+  font-weight: 500; }
+
+.tabs-article {
+  border-bottom: none; }
+  .tabs-article .nav-link {
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 5px;
+    font-weight: 500;
+    color: #999; }
+    .tabs-article .nav-link.active {
+      border-bottom: 2px solid #255888;
+      color: #255888; }
+      .tabs-article .nav-link.active:hover {
+        border-bottom: 2px solid #255888; }
+    .tabs-article .nav-link:hover {
+      border: none;
+      color: #255888; }
 
 #back-to-top {
   position: fixed;
