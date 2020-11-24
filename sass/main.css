@@ -62,6 +62,11 @@ input, textarea, button, button:active, button:focus {
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
+@keyframes animationheader {
+  0% {
+    top: -100%; }
+  100% {
+    top: 0; } }
 *, *:before, *:after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box; }
@@ -420,7 +425,9 @@ select[readonly="readonly"] {
     .header .head-top.active {
       position: fixed;
       background: #fff;
-      transition: all 0.2s; }
+      transition: all 0.2s;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.08);
+      animation: animationheader 1s forwards !important; }
       .header .head-top.active .logo a img.logo-main {
         display: none; }
       .header .head-top.active .logo a img.logo-light {
