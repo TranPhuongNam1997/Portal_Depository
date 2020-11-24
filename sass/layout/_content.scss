@@ -50,10 +50,12 @@
   }
 
 }
+//style block news
 
 .block-news{
   background: #f3f3f3;
   padding: 40px 0 29px;
+  overflow: hidden;
 }
 .title-blue{
   display: flex;
@@ -525,7 +527,7 @@
 .swiper-play{
   position: absolute;
   bottom: 212px;
-  left: 53%;
+  left: 54%;
   z-index: 10;
   transform: translateX(-50%);
   cursor: pointer;
