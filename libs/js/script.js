@@ -135,7 +135,9 @@ $( document ).ready(function() {
         }
 
     });
-
+    $('.box-search').focus(function () {
+        $(this).addClass('active');
+    });
 
 
 

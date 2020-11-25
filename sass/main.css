@@ -448,6 +448,9 @@ select[readonly="readonly"] {
         background: #f6f6f6;
         color: #202020; }
 
+.box-search.active input {
+  width: 300px; }
+
 .head-bot {
   position: absolute;
   bottom: 0;
@@ -472,6 +475,9 @@ select[readonly="readonly"] {
     left: 0;
     outline: none;
     background-image: url("../img/icon-angle-left.svg"); }
+    @media only screen and (max-width: 1199px) {
+      .head-bot .swiper-utility .swiper-button-prev, .head-bot .swiper-utility .swiper-container-rtl .swiper-button-next {
+        display: none; } }
   .head-bot .swiper-utility .swiper-button-prev:hover, .head-bot .swiper-utility .swiper-container-rtl .swiper-button-next:hover {
     left: 0;
     outline: none;
@@ -480,6 +486,9 @@ select[readonly="readonly"] {
     right: 0;
     outline: none;
     background-image: url("../img/icon-angle-rightx.svg"); }
+    @media only screen and (max-width: 1199px) {
+      .head-bot .swiper-utility .swiper-button-next, .head-bot .swiper-utility .swiper-container-rtl .swiper-button-prev {
+        display: none; } }
   .head-bot .swiper-utility .swiper-button-next:hover, .head-bot .swiper-utility .swiper-container-rtl .swiper-button-prev:hover {
     right: 0;
     outline: none;
@@ -828,6 +837,9 @@ select[readonly="readonly"] {
   transform: translateY(-50%);
   z-index: 2;
   outline: none; }
+  @media only screen and (max-width: 1199px) {
+    .navleft-service, .navleft-servicex, .navleft-servicexx {
+      display: none; } }
   .navleft-service:hover .img-dark, .navleft-servicex:hover .img-dark, .navleft-servicexx:hover .img-dark {
     display: none; }
   .navleft-service:hover .img-light, .navleft-servicex:hover .img-light, .navleft-servicexx:hover .img-light {
@@ -841,6 +853,9 @@ select[readonly="readonly"] {
   top: 50%;
   transform: translateY(-50%);
   z-index: 2; }
+  @media only screen and (max-width: 1199px) {
+    .navright-service, .navright-servicex, .navright-servicexx {
+      display: none; } }
   .navright-service:hover .img-dark, .navright-servicex:hover .img-dark, .navright-servicexx:hover .img-dark {
     display: none; }
   .navright-service:hover .img-light, .navright-servicex:hover .img-light, .navright-servicexx:hover .img-light {
@@ -1007,10 +1022,13 @@ select[readonly="readonly"] {
 .swiper-play {
   position: absolute;
   bottom: 212px;
-  left: 54%;
+  left: 53%;
   z-index: 10;
   transform: translateX(-50%);
   cursor: pointer; }
+  @media (max-width: 1366px) {
+    .swiper-play {
+      left: 54%; } }
   .swiper-play .icon-pause {
     display: block; }
   .swiper-play .icon-play {

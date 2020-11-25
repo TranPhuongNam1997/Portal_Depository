@@ -254,6 +254,13 @@
   }
 
 }
+.box-search{
+  &.active{
+    input{
+      width: 300px;
+    }
+  }
+}
 .head-bot{
   position: absolute;
   bottom: 0;
@@ -283,6 +290,9 @@
       left: 0;
       outline: none;
       background-image: url("../img/icon-angle-left.svg");
+      @include tablet-horizontal{
+        display: none;
+      }
 
     }
     .swiper-button-prev:hover, .swiper-container-rtl .swiper-button-next:hover{
@@ -296,6 +306,9 @@
       right: 0;
       outline: none;
       background-image: url("../img/icon-angle-rightx.svg");
+      @include tablet-horizontal{
+        display: none;
+      }
     }
     .swiper-button-next:hover, .swiper-container-rtl .swiper-button-prev:hover{
       right: 0;

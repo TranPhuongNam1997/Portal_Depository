@@ -301,6 +301,9 @@
   transform: translateY(-50%);
   z-index: 2;
   outline: none;
+  @include tablet-horizontal{
+    display: none;
+  }
   &:hover{
     .img-dark{
       display: none;
@@ -318,6 +321,9 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
+  @include tablet-horizontal{
+    display: none;
+  }
   &:hover{
     .img-dark{
       display: none;
@@ -527,10 +533,13 @@
 .swiper-play{
   position: absolute;
   bottom: 212px;
-  left: 54%;
+  left: 53%;
   z-index: 10;
   transform: translateX(-50%);
   cursor: pointer;
+  @media (max-width: 1366px) {
+    left: 54%;
+  }
   .icon-pause{
     display: block;
   }
