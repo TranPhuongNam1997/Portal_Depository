@@ -41,11 +41,37 @@
     opacity: 0.9;
     background: #255888;
   }
+  @include mobile-horizontal{
+    padding: 30px 0 0;
+  }
+  @include mobile{
+    padding: 25px 0 0;
+  }
 }
 .item-foot{
   //margin-bottom: 60px;
   padding: 30px 0;
+  @include mobile-horizontal{
+    padding: 20px 0;
+  }
+  &:last-child{
+    @include mobile{
+      padding: 20px 0 10px;
 
+    }
+  }
+  @include mobile{
+
+  }
+  .col-lg-3{
+    margin-bottom: 40px;
+    @include mobile-horizontal{
+      margin-bottom: 20px;
+    }
+    @include mobile{
+      margin-bottom: 15px;
+    }
+  }
 }
 .hasborder{
   height: 1px;
@@ -58,6 +84,15 @@
   line-height: 29px;
   color: #fff;
   margin-bottom: 20px;
+  @include mobile-horizontal{
+    font-size: 18px;
+    line-height: 21px;
+  }
+  @include mobile{
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 15px;
+  }
 
 }
 .list-foot{
@@ -66,6 +101,9 @@
     font-size: 14px;
     line-height: 17px;
     color: #F4F4F4;
+    @include mobile{
+      font-size: 14px;
+    }
     &:after{
       content: '';
       display: table;
@@ -89,6 +127,15 @@
   &.txt-foot-detail{
     margin-top: 49px;
     display: block;
+    @include tablet{
+      margin-top: 30px;
+    }
+    @include mobile-horizontal{
+      margin-top: 20px;
+    }
+    @include mobile{
+      margin-top: 15px;
+    }
   }
 }
 .copy-right{
@@ -97,12 +144,18 @@
   color: #F2F2F2;
   position: relative;
   padding: 11px 0 15px;
+  @include mobile-horizontal{
+    padding-top: 0;
+  }
 }
 .contact-foot{
   img{
     width: 20px;
     margin-right: 19px;
     float: left;
+    @include mobile-horizontal{
+      width: 16px;
+    }
   }
   span{
     float: left;
@@ -113,4 +166,7 @@
 .logo-foot{
   margin-bottom: 18px;
   position: relative;
+  @include mobile-horizontal{
+    margin-bottom: 0;
+  }
 }

@@ -534,7 +534,7 @@
             <div class="title-statistical">THỐNG KÊ</div>
             <div class="container-small">
                 <div class="row">
-                    <div class="col-lg-4 item-statistical wow zoomIn">
+                    <div class="col-md-4 col-sm-6 item-statistical wow zoomIn">
                         <div class="block-statistical">
                             <div class="box-statistical">
                                 Mã Số<br>GDCKNĐTNN
@@ -545,7 +545,7 @@
                             <div class="number-statistical">29.809|4.704</div>
                         </div>
                     </div>
-                    <div class="col-lg-4 item-statistical wow zoomIn">
+                    <div class="col-md-4 col-sm-6 item-statistical wow zoomIn">
                         <div class="block-statistical">
                             <div class="box-statistical">
                                 Mã Số<br>GDCKNĐTNN
@@ -556,7 +556,7 @@
                             <div class="number-statistical">29.809|4.704</div>
                         </div>
                     </div>
-                    <div class="col-lg-4 item-statistical wow zoomIn">
+                    <div class="col-md-4 col-sm-6 item-statistical wow zoomIn">
                         <div class="block-statistical">
                             <div class="box-statistical">
                                 Mã Số<br>GDCKNĐTNN
@@ -567,7 +567,7 @@
                             <div class="number-statistical">29.809|4.704</div>
                         </div>
                     </div>
-                    <div class="col-lg-4 item-statistical wow zoomIn">
+                    <div class="col-md-4 col-sm-6 item-statistical wow zoomIn">
                         <div class="block-statistical">
                             <div class="box-statistical">
                                 Mã Số<br>GDCKNĐTNN
@@ -578,7 +578,7 @@
                             <div class="number-statistical">29.809|4.704</div>
                         </div>
                     </div>
-                    <div class="col-lg-4 item-statistical wow zoomIn">
+                    <div class="col-md-4 col-sm-6 item-statistical wow zoomIn">
                         <div class="block-statistical">
                             <div class="box-statistical">
                                 Mã Số<br>GDCKNĐTNN
@@ -589,7 +589,7 @@
                             <div class="number-statistical">29.809|4.704</div>
                         </div>
                     </div>
-                    <div class="col-lg-4 item-statistical wow zoomIn">
+                    <div class="col-md-4 col-sm-6 item-statistical wow zoomIn">
                         <div class="block-statistical">
                             <div class="box-statistical">
                                 Mã Số<br>GDCKNĐTNN
@@ -651,7 +651,7 @@
                 <a href="#"><img src="img/logo.svg" alt="img"></a>
             </div>
             <div class="row item-foot">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <h4 class="title-foot">Giới Thiệu</h4>
                     <ul class="list-foot">
                         <li><a href="#">Thư ngỏ</a></li>
@@ -659,7 +659,7 @@
                         <li><a href="#">Cơ cấu tổ chức</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <h4 class="title-foot">Dịch vụ</h4>
                     <ul class="list-foot">
                         <li><a href="#">Bù trừ và thanh toán</a></li>
@@ -673,7 +673,7 @@
                         <li><a href="#">Vay và cho vay chứng khoán</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <h4 class="title-foot">Pháp Lý</h4>
                     <ul class="list-foot">
                         <li><a href="#">Luật</a></li>
@@ -684,7 +684,7 @@
                         <li><a href="#">Loại văn bản khác</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <h4 class="title-foot">Công Bố TT</h4>
                     <ul class="list-foot">
                         <li><a href="#"></a></li>
@@ -822,6 +822,23 @@
             slidesPerGroup: 1,
             loop: true,
             loopFillGroupWithBlank: true,
+
+            breakpoints: {
+                '991': {
+                    slidesPerView: 6,
+                },
+                '767': {
+                    slidesPerView: 5,
+
+                },
+
+                '576': {
+                    slidesPerView: 4,
+
+                },
+            },
+
+
         });
     });
 
@@ -844,6 +861,24 @@
                 nextEl: '.navright-service',
                 prevEl: '.navleft-service',
             },
+
+            breakpoints: {
+                '991': {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+
+                },
+                '767': {
+                    slidesPerView: 2.25,
+                    spaceBetween: 15,
+
+                },
+
+                '576': {
+                    slidesPerView: 1.5,
+                    spaceBetween: 10,
+                },
+            },
         });
     });
 
@@ -863,6 +898,26 @@
                 nextEl: '.navright-servicex',
                 prevEl: '.navleft-servicex',
             },
+            breakpoints: {
+                '991': {
+                    slidesPerView: 6,
+                    spaceBetween: 20,
+
+                },
+                '767': {
+                    slidesPerView: 4.5,
+                    spaceBetween: 15,
+
+                },
+
+                '576': {
+                    slidesPerView: 2.5,
+                    spaceBetween: 10,
+                },
+            },
+
+
+
         });
     });
 
