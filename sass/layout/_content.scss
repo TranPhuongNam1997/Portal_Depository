@@ -786,7 +786,10 @@
   transform: translateX(-50%);
   cursor: pointer;
   @media (max-width: 1366px) {
-    left: 54%;
+    left: calc(50% + 53px);
+  }
+  @include mobile-horizontal{
+    bottom: 10px;
   }
   .icon-pause{
     display: block;
@@ -811,16 +814,36 @@
   transform: translate(-50%,-50%);
   color: #fff;
   text-align: center;
+  @include mobile-horizontal{
+    top: 50%;
+    width: 100%;
+  }
   h2{
     font-weight: 500;
     font-size: 54px;
     line-height: 66px;
     margin-bottom: 17px;
+    @include mobile-horizontal{
+      font-size: 35px;
+      line-height: 38px;
+    }
+    @include mobile{
+      font-size: 25px;
+      line-height: 29px;
+    }
   }
   div{
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
+    @include mobile-horizontal{
+      font-size: 21px;
+      line-height: 25px;
+    }
+    @include mobile{
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 }
 

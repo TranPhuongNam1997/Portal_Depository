@@ -20,6 +20,9 @@
     }
     .swiper-container-horizontal > .swiper-pagination-bullets{
       bottom: 198px;
+      @include mobile-horizontal{
+        bottom: 15px;
+      }
     }
     .swiper-pagination-bullet {
       width: 12px;
@@ -104,9 +107,15 @@
       display: flex;
       align-items: center;
       padding: 11px 0;
+      position: absolute;
+      right: 0;
       .box-search{
         display: inline-block;
         position: relative;
+
+        transition: all 0.3s;
+
+
         input{
           background: rgba(242, 242, 242, 0.15);
           border-radius: 54px;
@@ -115,7 +124,13 @@
           width: 60px;
           height: 28px;
           color: #fff;
-          padding: 5px;
+          padding: 5px 33px 5px 10px;
+          font-size: 14px;
+          transition: all 0.3s;
+          &.active{
+            width: 150px;
+            transition: all 0.3s;
+          }
         }
         .btn-search{
           position: absolute;
@@ -261,6 +276,10 @@
     }
   }
 
+}
+.div-utility{
+  width: 200px;
+  height: 58px;
 }
 .box-search{
   &.active{

@@ -109,6 +109,12 @@ $( document ).ready(function() {
         $(this).siblings('input[type="file"]').trigger('click');
     });
 
+    $('.box-search input').focus(function() {
+        $(this).addClass('active');
+    });
+
+
+
 
 
 
@@ -163,3 +169,11 @@ $( document ).ready(function() {
 
 });
 
+$(document).click(function (event) {
+    // Check if clicked outside target
+    if (!($(event.target).closest(".box-search").length)) {
+        // Hide target
+        $(".box-search input").removeClass('active');
+    }
+
+});
